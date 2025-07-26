@@ -63,7 +63,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5098062380633948778, guid: 52b8120cf7efd0b4a95308daf7750140, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4676466484120638633}
+    - targetCorrespondingSourceObject: {fileID: 5098062380633948778, guid: 52b8120cf7efd0b4a95308daf7750140, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8835521190709640990}
+    - targetCorrespondingSourceObject: {fileID: 5098062380633948778, guid: 52b8120cf7efd0b4a95308daf7750140, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5146492721491055584}
   m_SourcePrefab: {fileID: 100100000, guid: 52b8120cf7efd0b4a95308daf7750140, type: 3}
+--- !u!4 &18322576219927611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9210736325538364038, guid: 52b8120cf7efd0b4a95308daf7750140, type: 3}
+  m_PrefabInstance: {fileID: 9192413818187501245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4120220897188334807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5098062380633948778, guid: 52b8120cf7efd0b4a95308daf7750140, type: 3}
@@ -83,12 +94,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data: {fileID: 0}
   _lookPivot: {fileID: 4189195181561911551}
+  _attackerPosition: {fileID: 18322576219927611}
   OnBeginTurn:
     m_PersistentCalls:
       m_Calls: []
   OnEndTurn:
     m_PersistentCalls:
       m_Calls: []
+  OnCharacterDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCharacterDeath:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &8835521190709640990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4120220897188334807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51d29cafe8d1274db99c41dda5cc957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ownerCharacter: {fileID: 4676466484120638633}
+  OnClicked:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!136 &5146492721491055584
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4120220897188334807}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Height: 1.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &4189195181561911551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5021796676662449730, guid: 52b8120cf7efd0b4a95308daf7750140, type: 3}
